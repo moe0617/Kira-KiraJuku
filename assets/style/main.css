@@ -920,6 +920,10 @@ h1 {
 }
 
 /* イメージ写真 */
+.course__tab__content__item img {
+    transition-duration: 1s;
+}
+
 @media (min-width: 768px) {
     .course__tab__content__item img {
         width: 100%;
@@ -1112,6 +1116,7 @@ td {
     font-size: 1.375rem;
     width: 100%;
     aspect-ratio: 20 / 9;
+    transition-duration: 1s;
 }
 
 @media (min-width: 768px) {
