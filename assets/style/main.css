@@ -1096,20 +1096,26 @@ td {
 }
 
 /* フッター */
-.footer__nav {
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-}
-
 @media (min-width: 768px) {
     .footer__nav {
+        display: flex;
         width: 100%;
         flex-direction: row;
     }
 }
 
+.footer__container {
+    overflow: hidden;
+}
+
+@media (min-width: 768px) {
+    .footer__container {
+        width: 50%;
+    }
+}
+
 .footer__qa,.footer__search {
+    display: block;
     padding-top: 4.0625rem;
     padding-left: 4%;
     font-weight: 800;
@@ -1123,7 +1129,7 @@ td {
     .footer__qa,.footer__search {
         display: flex;
         font-size: 2rem;
-        width: 50%;
+        width: 100%;
         max-height: 20rem;
         padding: 0;
         aspect-ratio: 16 / 5;
@@ -1134,7 +1140,7 @@ td {
 
 @media (min-width: 1920px) {
     .footer__qa,.footer__search {
-        aspect-ratio: 16 / 6;
+        aspect-ratio: 3 / 1;
     }
 }
 
@@ -1155,7 +1161,7 @@ td {
 
 .footer__search {
     background-image: url("/assets/image/footer/pht_classrooms_sp.jpg");
-    background-size: 100% auto;
+    background-size: 100%;
 }
 
 @media (min-width: 768px) {
