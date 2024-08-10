@@ -65,6 +65,29 @@ li {
     opacity: 0.6;
 }
 
+.-promotion__button {
+    display: block;
+    padding: 1.4375rem 3.125rem;
+    width: 18.75rem;
+    margin-inline: auto;
+    line-height: 1;
+    color: #fff;
+    background: linear-gradient(to right, #0271E0, #53A2F0);
+    border-radius: 3.125rem;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+@media (min-width: 768px) {
+    .-promotion__button {
+        width: 22rem;
+        padding: 1.625rem 3.1875rem;
+        font-size: 1.5625rem;
+        margin-inline: 0;
+    }
+}
+
 /* ヘッダー
 ------------------------------------------ */
 .header {
@@ -727,24 +750,16 @@ h1 {
     }
 }
 
-.promotion__button {
-    display: block;
-    padding: 1.4375rem 3.125rem;
-    width: fit-content;
-    margin-inline: auto;
-    line-height: 1;
-    color: #fff;
-    background: linear-gradient(to right, #0271E0, #53A2F0);
-    border-radius: 3.125rem;
-    text-align: center;
-    font-size: 1.25rem;
-    font-weight: 700;
+.promotion__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 @media (min-width: 768px) {
-    .promotion__button {
-        padding: 1.625rem 3.1875rem;
-        font-size: 1.5625rem;
+    .promotion__buttons {
+        flex-direction: row;
+        justify-content: center;
     }
 }
 
